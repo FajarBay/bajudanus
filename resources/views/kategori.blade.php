@@ -187,7 +187,7 @@
               <div class="card card-stats">
                 <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
-                    <i class="fa fa-box">box</i>
+                    <i class="material-icons">layers</i>
                   </div>
                   <p class="card-category">Kardus</p>
                   <h4 class="card-title">Rp 10.000/kg</h4>

@@ -79,31 +79,7 @@
   <!-- /headerwrap -->
 
   <!-- ==== GREYWRAP ==== -->
-  <div id="greywrap">
-    <div class="row">
-      <div class="col-lg-4 callout">
-        <span class="icon icon-stack"></span>
-        <h2>Bootstrap 3</h2>
-        <p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
-      </div>
-      <!-- col-lg-4 -->
-
-      <div class="col-lg-4 callout">
-        <span class="icon icon-eye"></span>
-        <h2>Retina Ready</h2>
-        <p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
-      </div>
-      <!-- col-lg-4 -->
-
-      <div class="col-lg-4 callout">
-        <span class="icon icon-heart"></span>
-        <h2>Crafted with Love</h2>
-        <p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love. </p>
-      </div>
-      <!-- col-lg-4 -->
-    </div>
-    <!-- row -->
-  </div>
+  
   <!-- greywrap -->
 
   <!-- ==== ABOUT ==== -->
@@ -114,7 +90,7 @@
       <hr>
 
       <div class="col-lg-offset-2 col-lg-8">
-        <p>Aplikasi Baju Danus memiliki fitur-fitur yang digunakan untuk mengakses sistem pada aplikasi bank sampah yaitu category, point, sell dan community. Selain itu, aplikasi ini juga menyediakan sarana untuk masyarakat yang ingin menjual hasil karya dari olahan sampah. </p>
+        <p style="text-align: center">Aplikasi Baju Danus memiliki fitur-fitur yang digunakan untuk mengakses sistem pada aplikasi bank sampah yaitu category, point, sell dan community. Selain itu, aplikasi ini juga menyediakan sarana untuk masyarakat yang ingin menjual hasil karya dari olahan sampah. </p>
       </div>
       <!-- col-lg-6 -->
       <!-- col-lg-6 -->
@@ -144,26 +120,18 @@
       <hr>
       <br>
       <div class="col-lg-offset-2 col-lg-8">
-        <p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t
+        <p style="text-align: center;">Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t
           credible aren’t viable.
         </p>
-        <p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
-        <p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s
+        <p style="text-align: center;">We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
+        <p style="text-align: center;">By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s
           when the brand can truly flex its muscles.</p>
       </div>
       <!-- col-lg -->
     </div>
     <!-- row -->
 
-    <div class="row">
-      <h2 class="centered">MOBILE FIRST THINKING, ALWAYS.</h2>
-      <hr>
-      <br>
-      <div class="col-lg-offset-2 col-lg-8">
-        <img class="img-responsive" src="img/iphone.png" alt="">
-      </div>
-      <!-- col -->
-    </div>
+    
     <!-- row -->
   </div>
   <!-- container -->
@@ -289,26 +257,7 @@
       <div class="col-lg-4">
         <h3>About Us</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <h3>Newsletter</h3>
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label for="inputEmail1" class="col-lg-4 control-label"></label>
-            <div class="col-lg-10">
-              <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="text1" class="col-lg-4 control-label"></label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="text1" placeholder="Your Name">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-lg-10">
-              <button type="submit" class="btn btn-success">Sign in</button>
-            </div>
-          </div>
-        </form>
+        
       </div>
       <!-- col -->
 
