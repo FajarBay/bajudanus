@@ -34,7 +34,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item  ">
+          <li class="nav-item active  ">
             <a class="nav-link" href="/dashboard">
               <i class="material-icons">home</i>
               <p>Home</p>
@@ -52,10 +52,10 @@
               <p>Maps</p>
             </a>
           </li>
-          <li class="nav-item active ">
-            <a class="nav-link" href="/notifications">
-              <i class="material-icons">notifications</i>
-              <p>Untitled</p>
+          <li class="nav-item ">
+            <a class="nav-link" href="/tabel">
+              <i class="material-icons">tabel</i>
+              <p>Tabel Harga</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">
@@ -72,7 +72,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Untitled</a>
+            <a class="navbar-brand" href="#pablo">Dashboard</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -128,13 +128,99 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div style="height: 570px"></div>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-warning card-header-icon">
+                  <div class="card-icon">
+                    <i class="fa fa-book"></i>
+                  </div>
+                  <p class="card-category">Kertas
+                  <h4 class="card-title">Rp 1000/kg</h4>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">add_box</i>
+                    <a href="/kategori">Show More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-success card-header-icon">
+                  <div class="card-icon">
+                    <i class="fa fa-glass"></i>
+                  </div>
+                  <p class="card-category">Kaca</p>
+                  <h4 class="card-title">Rp 10.000/kg</h4>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">add_box</i> 
+                    <a href="#pablo">Show More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-danger card-header-icon">
+                  <div class="card-icon">
+                    <i class="fa fa-shopping-bag"></i>
+                  </div>
+                  <p class="card-category">Plastik</p>
+                  <h4 class="card-title">Rp 5000/kg</h4>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">add_box</i> 
+                    <a href="#pablo">Show More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-info card-header-icon">
+                  <div class="card-icon">
+                    <i class="fa fa-box">box</i>
+                  </div>
+                  <p class="card-category">Kardus</p>
+                  <h4 class="card-title">Rp 10.000/kg</h4>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">add_box</i> 
+                    <a href="#pablo">Show More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
               <li>
-                <a href="https://www.creative-tim.com">
+                <a href="/welcome">
                   Creative Tim
                 </a>
               </li>
@@ -183,8 +269,9 @@
   <script src="../assets/demo/demo.js"></script>
   <script>
     $(document).ready(function() {
-      //init DateTimePickers
-      md.initFormExtendedDatetimepickers();
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
     });
   </script>
 </body>

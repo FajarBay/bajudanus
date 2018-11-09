@@ -12,22 +12,24 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: url("../assets/img/back.png"); 
-                background-size: 100%;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
                 margin: 0;
+                height: 2000px;
+                
+            }
+            .bc{
+                background-image: url("../assets/img/back.png"); 
+                background-size: 100%;
             }
 
             .full-height {
-                height: 100vh;
+                height: 850px;
             }
 
             .flex-center {
                 align-items: center;
-                display: flex;
                 justify-content: center;
             }
 
@@ -52,13 +54,22 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 50px;
                 color: white;
             }
 
             .links > a {
-                color: #636b6f;
+                color: white;
                 padding: 0 25px;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .link > a {
+                color: #636b6f;
+                padding: 0 10px;
                 font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -67,21 +78,21 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-top: 200px;
             }
+            
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-                <div class="top-left links">
-                    <a href="/">Baju Danus</a>
-                </div>
-            @if (Route::has('login'))
-                <div class="top-right links">
+        <div class="flex-center position-ref full-height bc">
+                <div class="top-left link">
                     <a href="/dashboard">Home</a>
                     <a href="#Company">Company</a>
                     <a href="#About">About</a>
                     <a href="#Contact">Contact</a>
+                </div>
+            @if (Route::has('login'))
+                <div class="top-right link">
                     @auth
                         <a href="{{ url('/home') }}">Dashboard</a>
                     @else
@@ -95,10 +106,11 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Baju Danus
-                </div>
             </div>
+            
+        </div>
+        <div calss="full-height">
+            <h1 align="center">Baju Danus</h1>
         </div>
     </body>
 </html>

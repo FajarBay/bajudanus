@@ -13,6 +13,18 @@ class PostController extends Controller
   public function index(){
     $post = Posts::paginate(4);
     return view('post.index',compact('post'));
+
+  }
+
+  public function tabel(){
+    $post = Posts::paginate(4);
+    return view('tabel',compact('post'));
+    
+  }
+  public function kategori(){
+    $post = Posts::paginate(4);
+    return view('kategori',compact('post'));
+    
   }
 
   public function addPost(Request $request){

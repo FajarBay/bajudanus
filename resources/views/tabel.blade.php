@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ecommerce.png">
+  <link rel="icon" type="image/png" href="../assets/img/ecommerce.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Baju Danus
@@ -34,13 +34,13 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item  ">
+          <li class="nav-item ">
             <a class="nav-link" href="/dashboard">
               <i class="material-icons">home</i>
               <p>Home</p>
             </a>
           </li>
-          <li class="nav-item active ">
+          <li class="nav-item ">
             <a class="nav-link" href="/user">
               <i class="material-icons">person</i>
               <p>User Profile</p>
@@ -52,7 +52,7 @@
               <p>Maps</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/tabel">
               <i class="material-icons">tabel</i>
               <p>Tabel Harga</p>
@@ -72,7 +72,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">User Profile</a>
+            <a class="navbar-brand" href="#pablo">Tabel Harga</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -131,120 +131,166 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-8">
-              <div class="card">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title">Edit Profile</h4>
-                  <p class="card-category">Complete your profile</p>
-                </div>
-                <div class="card-body">
-                  <form>
-                    <!--<div class="row">-->
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Company</label>
-                          <input type="text" class="form-control"> <!--disabled-->
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Username</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Email address</label>
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Fist Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Last Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Adress</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">City</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Country</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Postal Code</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>About Me</label>
-                          <div class="form-group">
-                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                            <textarea class="form-control" rows="5"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    <!--</div>-->
-                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="../assets/img/faces/marc.jpg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category text-gray">CEO / Co-Founder</h6>
-                  <h4 class="card-title">Alec Thompson</h4>
-                  <p class="card-description">
-                    Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                  </p>
-                  <a href="#pablo" class="btn btn-primary btn-round">Follow</a>
-                </div>
-                </div>
-              </div>
+  <div class="col-md-12">
+    <h1>Data Sampah</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="table table-responsive">
+    <table class="table table-bordered" id="table">
+      <tr>
+        <th width="150px">No</th>
+        <th>Jenis</th>
+        <th>Harga</th>
+        <th>Create At</th>
+      </tr>
+      {{ csrf_field() }}
+      <?php  $no = 1; ?>
+      @foreach ($post as $value)
+        <tr class="post{{$value->id}}">
+          <td>{{ $no++ }}</td>
+          <td>{{ $value->title }}</td>
+          <td>{{ $value->body }}</td>
+          <td>{{ $value->created_at }}</td>
+        </tr>
+      @endforeach
+    </table>
+  </div>
+  {{$post->links()}}
+</div>
+{{-- Modal Form Create Post --}}
+<div id="create" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+          <div class="form-group row add">
+            <label class="control-label col-sm-2" for="title">Title :</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="title" name="title"
+              placeholder="Your Title Here" required>
+              <p class="error text-center alert alert-danger hidden"></p>
             </div>
           </div>
-        </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="body">Body :</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="body" name="body"
+              placeholder="Your Body Here" required>
+              <p class="error text-center alert alert-danger hidden"></p>
+            </div>
+          </div>
+        </form>
       </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning" type="submit" id="add">
+              <span class="glyphicon glyphicon-plus"></span>Save Post
+            </button>
+            <button class="btn btn-warning" type="button"   data-dismiss="modal">
+              <span class="glyphicon glyphicon-remobe"></span>Close
+            </button>
+          </div>
+    </div>
+  </div>
+</div></div>
+{{-- Modal Form Show POST --}}
+<div id="show" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+                  </div>
+                    <div class="modal-body">
+                    <div class="form-group">
+                      <label for="">ID :</label>
+                      <b id="i"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Title :</label>
+                      <b id="ti"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Body :</label>
+                      <b id="by"/>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+{{-- Modal Form Edit and Delete Post --}}
+<div id="myModal"class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="modal">
+
+          <div class="form-group">
+            <label class="control-label col-sm-2"for="id">ID</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="fid" disabled>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2"for="title">Title</label>
+            <div class="col-sm-10">
+            <input type="name" class="form-control" id="t">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2"for="body">Body</label>
+            <div class="col-sm-10">
+            <textarea type="name" class="form-control" id="b"></textarea>
+            </div>
+          </div>
+        </form>
+                {{-- Form Delete Post --}}
+        <div class="deleteContent">
+          Are You sure want to delete <span class="title"></span>?
+          <span class="hidden id"></span>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn actionBtn" data-dismiss="modal">
+          <span id="footer_action_button" class="glyphicon"></span>
+        </button>
+
+        <button type="button" class="btn btn-warning" data-dismiss="modal">
+          <span class="glyphicon glyphicon"></span>close
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+ </br>
+          </br>
+          </br>
+          </br>
+          </br>
+        </br>
+        </br>
+        </br>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
               <li>
-                <a href="https://www.creative-tim.com">
+                <a href="/welcome">
                   Creative Tim
                 </a>
               </li>
@@ -291,6 +337,14 @@
   <script src="../assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
 </body>
 
 </html>
+

@@ -12,11 +12,40 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+Route::get('/tabel', function () {
+    return view('tabel');
+});
+Route::get('/icons', function () {
+    return view('icons');
+});
+Route::get('/map', function () {
+    return view('map');
+});
+Route::get('/kategori', function () {
+    return view('kategori');
+});
+Route::get('/tables', function () {
+    return view('tables');
+});
+Route::get('/typography', function () {
+    return view('typography');
+});
+Route::get('/upgrade', function () {
+    return view('upgrade');
+});
+Route::get('/user', function () {
+    return view('user');
 });
 
 Route::group(['middleware' => ['web']], function() {
   Route::resource('post','PostController');
+  Route::GET('tabel','PostController@tabel');
+  Route::GET('kategori','PostController@kategori');
   Route::POST('addPost','PostController@addPost');
   Route::POST('editPost','PostController@editPost');
   Route::POST('deletePost','PostController@deletePost');

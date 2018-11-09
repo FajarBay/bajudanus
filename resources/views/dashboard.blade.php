@@ -53,9 +53,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/notifications">
-              <i class="material-icons">notifications</i>
-              <p>Notifications</p>
+            <a class="nav-link" href="/tabel">
+              <i class="material-icons">tabel</i>
+              <p>Tabel Harga</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">
@@ -143,7 +143,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">add_box</i>
-                    <a href="#pablo">Show More...</a>
+                    <a href="/kategori">Show More...</a>
                   </div>
                 </div>
               </div>
