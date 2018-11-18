@@ -17,7 +17,6 @@ class CreateJualsTable extends Migration
             $table->increments('id');
             $table->string("nama");
             $table->string("jual");
-            $table->string("harga");
             $table->timestamps();
         });
     }

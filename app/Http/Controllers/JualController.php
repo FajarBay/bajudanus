@@ -37,12 +37,12 @@ class JualController extends Controller
     {
         $data = new \App\Jual();
         $data->nama = $request->input('nama');
-        $file = $request->file('file');
-        $data->harga = $request->input('harga');
-        $ext = $file->getClientOriginalExtension();
+        $jual = $request->file('jual');
+
+        $ext = $jual->getClientOriginalExtension();
         $newName = rand(100000,1001238912).".".$ext;
-        $file->move('uploads/file',$newName);
-        $data->file = $newName;
+        $jual->move('uploads/file',$newName);
+        $data->jual = $newName;
         $data->save();
         return redirect()->route('jual.index')->with('alert-success','Berhasil Menambahkan Data!');
     }
