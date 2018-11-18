@@ -15,7 +15,7 @@
         <th width="150px">No</th>
         <th>Jenis</th>
         <th>Harga</th>
-        <th>Create At</th>
+        <th>Update</th>
         <th class="text-center" width="150px">
           <a href="#" class="create-modal btn btn-success btn-sm">
             <i class="glyphicon glyphicon-plus"></i>
@@ -58,18 +58,18 @@
       <div class="modal-body">
         <form class="form-horizontal" role="form">
           <div class="form-group row add">
-            <label class="control-label col-sm-2" for="title">Title :</label>
+            <label class="control-label col-sm-2" for="title">Jenis :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="title" name="title"
-              placeholder="Your Title Here" required>
+              placeholder="Masukan Jenis Sampah" required>
               <p class="error text-center alert alert-danger hidden"></p>
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="body">Body :</label>
+            <label class="control-label col-sm-2" for="body">Harga :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="body" name="body"
-              placeholder="Your Body Here" required>
+              placeholder="Masukan Harga Sampah" required>
               <p class="error text-center alert alert-danger hidden"></p>
             </div>
           </div>
@@ -77,10 +77,10 @@
       </div>
           <div class="modal-footer">
             <button class="btn btn-warning" type="submit" id="add">
-              <span class="glyphicon glyphicon-plus"></span>Save Post
+              <span class="glyphicon glyphicon-plus"></span>Simpan
             </button>
             <button class="btn btn-warning" type="button"   data-dismiss="modal">
-              <span class="glyphicon glyphicon-remobe"></span>Close
+              <span class="glyphicon glyphicon-remobe"></span>Tutup
             </button>
           </div>
     </div>
@@ -100,11 +100,11 @@
                       <b id="i"/>
                     </div>
                     <div class="form-group">
-                      <label for="">Title :</label>
+                      <label for="">Jenis :</label>
                       <b id="ti"/>
                     </div>
                     <div class="form-group">
-                      <label for="">Body :</label>
+                      <label for="">Harga :</label>
                       <b id="by"/>
                     </div>
                     </div>
@@ -131,14 +131,14 @@
           </div>
 
           <div class="form-group">
-            <label class="control-label col-sm-2"for="title">Title</label>
+            <label class="control-label col-sm-2"for="title">Jenis</label>
             <div class="col-sm-10">
             <input type="name" class="form-control" id="t">
             </div>
           </div>
 
           <div class="form-group">
-            <label class="control-label col-sm-2"for="body">Body</label>
+            <label class="control-label col-sm-2"for="body">Harga</label>
             <div class="col-sm-10">
             <textarea type="name" class="form-control" id="b"></textarea>
             </div>
@@ -146,7 +146,7 @@
         </form>
                 {{-- Form Delete Post --}}
         <div class="deleteContent">
-          Are You sure want to delete <span class="title"></span>?
+          Apakah anda ingin menghapus? <span class="title"></span>?
           <span class="hidden id"></span>
         </div>
 
@@ -158,7 +158,7 @@
         </button>
 
         <button type="button" class="btn btn-warning" data-dismiss="modal">
-          <span class="glyphicon glyphicon"></span>close
+          <span class="glyphicon glyphicon"></span>tutup
         </button>
 
       </div>

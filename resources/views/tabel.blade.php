@@ -170,7 +170,7 @@
       <div class="modal-body">
         <form class="form-horizontal" role="form">
           <div class="form-group row add">
-            <label class="control-label col-sm-2" for="title">Title :</label>
+            <label class="control-label col-sm-2" for="title">Jenis :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="title" name="title"
               placeholder="Your Title Here" required>
@@ -178,7 +178,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="body">Body :</label>
+            <label class="control-label col-sm-2" for="body">Harga :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="body" name="body"
               placeholder="Your Body Here" required>
@@ -212,11 +212,11 @@
                       <b id="i"/>
                     </div>
                     <div class="form-group">
-                      <label for="">Title :</label>
+                      <label for="">Jenis :</label>
                       <b id="ti"/>
                     </div>
                     <div class="form-group">
-                      <label for="">Body :</label>
+                      <label for="">Harga :</label>
                       <b id="by"/>
                     </div>
                     </div>

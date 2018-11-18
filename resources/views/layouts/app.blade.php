@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel Crud</title>
+    <title>Baju Danus</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -22,7 +22,6 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">Baju Danus</a>
-      <a class="navbar-brand" href="{{route('post.index')}}">Task</a>
     </div>
     <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
@@ -37,6 +36,7 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                        <a class="navbar-brand nav navbar-nav" href="{{route('post.index')}}">Kategori</a>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -72,7 +72,7 @@
   $(document).on('click','.create-modal', function() {
     $('#create').modal('show');
     $('.form-horizontal').show();
-    $('.modal-title').text('Add Post');
+    $('.modal-title').text('Data Sampah');
   });
   $("#add").click(function() {
     $.ajax({
@@ -112,7 +112,7 @@ $('#footer_action_button').removeClass('glyphicon-trash');
 $('.actionBtn').addClass('btn-success');
 $('.actionBtn').removeClass('btn-danger');
 $('.actionBtn').addClass('edit');
-$('.modal-title').text('Post Edit');
+$('.modal-title').text('Edit');
 $('.deleteContent').hide();
 $('.form-horizontal').show();
 $('#fid').val($(this).data('id'));
@@ -153,7 +153,7 @@ $('#footer_action_button').addClass('glyphicon-trash');
 $('.actionBtn').removeClass('btn-success');
 $('.actionBtn').addClass('btn-danger');
 $('.actionBtn').addClass('delete');
-$('.modal-title').text('Delete Post');
+$('.modal-title').text('Hapus');
 $('.id').text($(this).data('id'));
 $('.deleteContent').show();
 $('.form-horizontal').hide();
@@ -181,7 +181,7 @@ $('.modal-footer').on('click', '.delete', function(){
   $('#i').text($(this).data('id'));
   $('#ti').text($(this).data('title'));
   $('#by').text($(this).data('body'));
-  $('.modal-title').text('Show Post');
+  $('.modal-title').text('Detail Sampah');
   });
 </script>
   </body>

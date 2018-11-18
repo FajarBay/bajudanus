@@ -57,4 +57,9 @@ public function deletePost(request $request){
 $post = Posts::find ($request->id)->delete();
 return response()->json();
 }
+
+public function create()
+    {
+        return view('user');
+    }
 }

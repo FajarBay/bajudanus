@@ -32,9 +32,7 @@ Route::get('/kategori', function () {
 Route::get('/tables', function () {
     return view('tables');
 });
-Route::get('/typography', function () {
-    return view('typography');
-});
+Route::resource('jual', 'JualController');
 Route::get('/upgrade', function () {
     return view('upgrade');
 });

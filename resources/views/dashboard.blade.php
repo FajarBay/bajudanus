@@ -177,7 +177,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">shopping_cart</i> 
-                    <a href="#pablo">Sell Your Garbage</a>
+                    <a href="/jual">Sell Your Garbage</a>
                   </div>
                 </div>
               </div>
