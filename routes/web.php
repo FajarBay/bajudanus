@@ -31,11 +31,17 @@ Route::get('/kategori', function () {
 });
 Route::get('/tables', function () {
     return view('tables');
-});
+})
+;
+//table jual
 Route::resource('jual', 'JualController');
 Route::get('/upgrade', function () {
     return view('upgrade');
 });
+Route::get('foto/save/{id}',[
+    'as' => 'foto.download', 'uses' => 'JualController@downloadFoto']);
+
+//user
 Route::get('/user', function () {
     return view('user');
 });

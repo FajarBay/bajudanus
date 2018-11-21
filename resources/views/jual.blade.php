@@ -19,7 +19,11 @@
                     <th>No.</th>
                     <th>Nama</th>
                     <th>Gambar</th>
-                    <th>Pilihan</th>
+                    <th class="text-center" width="150px">
+          <a href="jual/create" class="create-modal btn btn-success btn-sm">
+            <i class="glyphicon glyphicon-plus"></i>
+          </a>
+        </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -27,8 +31,10 @@
                 @foreach($data as $datas)
                     <tr>
                         <td>{{ $no++ }}</td>
-                        <td>{{ $datas->name }}</td>
-                        <td><img src="{{ url('uploads'.$datas->jual) }}" style="width: 150px; height: 150px;"> </td>
+                        <td>{{ $datas->nama }}</td>
+                        <td><img src="{{ url('uploads/file/'.$datas->jual) }}" style="width: 150px; height: 150px;">
+                            <a href="{{ route('foto.download', $datas->id) }}" class="btn btn-outline-warning">Download foto</a>
+                        </td>
                         
                         
                         <td>

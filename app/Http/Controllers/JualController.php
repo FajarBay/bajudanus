@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Jual;
 use Illuminate\Http\Request;
+use DB;
 
 class JualController extends Controller
 {
@@ -40,7 +42,7 @@ class JualController extends Controller
         $jual = $request->file('jual');
 
         $ext = $jual->getClientOriginalExtension();
-        $newName = rand(100000,1001238912).".".$ext;
+        $newName = $data->nama.time().".".$ext;
         $jual->move('uploads/file',$newName);
         $data->jual = $newName;
         $data->save();
@@ -55,7 +57,8 @@ class JualController extends Controller
      */
     public function show($id)
     {
-        //
+        $jual = \App\Jual::find($id);
+        return view('Jual.show', ['jual'=>$jual]);
     }
 
     /**
@@ -66,7 +69,8 @@ class JualController extends Controller
      */
     public function edit($id)
     {
-        //
+        $jual = \App\Jual::find($id);
+        return view('Jual.edit', ['jual'=>$jual]);
     }
 
     /**
@@ -76,9 +80,21 @@ class JualController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Jual $jual)
     {
-        //
+        $jual = \App\Jual::find($jual->id);
+        if ($request->hasFile('foto')) { 
+            $foto = $request->file('foto');
+            $ext = $foto->getClientOriginalExtension();
+            $newName = $jual->nama.time().".".$ext;
+            $jual->jual = $newName;
+            $foto->move('uploads/file',$newName);
+        } 
+        $jual->nama = $request->nama;
+        $jual->save();
+        $data = \App\Jual::all();
+        return redirect()->route('jual.index')->with('alert-success','Berhasil Mengubah Data!');
+    
     }
 
     /**
@@ -89,6 +105,17 @@ class JualController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $jual= \App\Jual::find($id);
+        $jual->delete();
+        return back();
+    }
+
+    public function downloadFoto($id){
+        $foto = \App\Jual::where('id', $id)->firstOrFail();
+        $path = public_path('uploads/file');
+        $name = '/'.$foto->jual;
+        $true_path = $path . $name;
+        return response()->download($true_path, $foto
+                 ->jual, ['Content-Type' => $foto->mime]);
     }
 }
