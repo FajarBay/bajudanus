@@ -31,8 +31,10 @@ Route::get('/kategori', function () {
 });
 Route::get('/tables', function () {
     return view('tables');
-})
-;
+});
+Route::get('/users', 'User@index')->name('user');
+Route::resource('users' , 'User');
+Route::resource('pengguna', 'Pengguna');
 //table jual
 Route::resource('jual', 'JualController');
 Route::get('/upgrade', function () {

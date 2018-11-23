@@ -37,6 +37,7 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                         <a class="navbar-brand nav navbar-nav" href="{{route('post.index')}}">Kategori</a>
+                        <a class="navbar-brand nav navbar-nav" href="/pengguna">User</a>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

@@ -18,6 +18,10 @@
                                         <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" value="{{ $jual->nama }}">
                                     </div>
                                     <div class="form-group">
+                                        <label for="harga">Harga</label>
+                                        <input type="text" class="form-control" id="harga" name="harga" placeholder="Harga" value="{{ $jual->harga }}">
+                                    </div>
+                                    <div class="form-group">
                                         <label for="foto">Foto</label><br>
                                         <img src="{{ url('uploads/file/'.$jual->jual) }}" style="width: 150px; height: 150px;"><br>
                                         <input type="file" class="form-control" id="foto" name="foto" placeholder="foto">

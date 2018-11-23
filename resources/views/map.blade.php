@@ -52,9 +52,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/notifications">
-              <i class="material-icons">notifications</i>
-              <p>Untitled</p>
+            <a class="nav-link" href="/tabel">
+              <i class="material-icons">tabel</i>
+              <p>Tabel Harga</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">

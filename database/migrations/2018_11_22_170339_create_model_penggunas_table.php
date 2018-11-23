@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJualsTable extends Migration
+class CreateModelPenggunasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateJualsTable extends Migration
      */
     public function up()
     {
-        Schema::create('jual', function (Blueprint $table) {
+        Schema::create('pengguna', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("nama");
-            $table->string("jual");
-            $table->string("harga");
+            $table->string('username');
+            $table->string('email');
+            $table->text('alamat');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateJualsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('juals');
+        Schema::dropIfExists('model_penggunas');
     }
 }

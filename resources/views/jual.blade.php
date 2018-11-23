@@ -19,6 +19,7 @@
                     <th>No.</th>
                     <th>Nama</th>
                     <th>Gambar</th>
+                    <th>Harga</th>
                     <th class="text-center" width="150px">
           <a href="jual/create" class="create-modal btn btn-success btn-sm">
             <i class="glyphicon glyphicon-plus"></i>
@@ -35,6 +36,7 @@
                         <td><img src="{{ url('uploads/file/'.$datas->jual) }}" style="width: 150px; height: 150px;">
                             <a href="{{ route('foto.download', $datas->id) }}" class="btn btn-outline-warning">Download foto</a>
                         </td>
+                        <td>{{ $datas->harga }}</td>
                         
                         
                         <td>

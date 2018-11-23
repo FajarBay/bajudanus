@@ -40,7 +40,7 @@ class JualController extends Controller
         $data = new \App\Jual();
         $data->nama = $request->input('nama');
         $jual = $request->file('jual');
-
+        $data->harga = $request->input('harga');
         $ext = $jual->getClientOriginalExtension();
         $newName = $data->nama.time().".".$ext;
         $jual->move('uploads/file',$newName);
@@ -91,6 +91,7 @@ class JualController extends Controller
             $foto->move('uploads/file',$newName);
         } 
         $jual->nama = $request->nama;
+        $jual->harga = $request->harga;
         $jual->save();
         $data = \App\Jual::all();
         return redirect()->route('jual.index')->with('alert-success','Berhasil Mengubah Data!');
