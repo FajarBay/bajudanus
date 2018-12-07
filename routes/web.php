@@ -20,21 +20,11 @@ Route::get('/dashboard', function () {
 Route::get('/tabel', function () {
     return view('tabel');
 });
-Route::get('/icons', function () {
-    return view('icons');
-});
-Route::get('/map', function () {
-    return view('map');
-});
+Route::GET('map', 'JualController@barang');
 Route::get('/kategori', function () {
     return view('kategori');
 });
-Route::get('/tables', function () {
-    return view('tables');
-});
-Route::get('/users', 'User@index')->name('user');
 Route::resource('users' , 'User');
-Route::resource('pengguna', 'Pengguna');
 //table jual
 Route::resource('jual', 'JualController');
 Route::get('/upgrade', function () {
@@ -42,11 +32,6 @@ Route::get('/upgrade', function () {
 });
 Route::get('foto/save/{id}',[
     'as' => 'foto.download', 'uses' => 'JualController@downloadFoto']);
-
-//user
-Route::get('/user', function () {
-    return view('user');
-});
 
 Route::group(['middleware' => ['web']], function() {
   Route::resource('post','PostController');
@@ -60,3 +45,9 @@ Route::group(['middleware' => ['web']], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+  Route::prefix('admin')->group(function() {
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+  });

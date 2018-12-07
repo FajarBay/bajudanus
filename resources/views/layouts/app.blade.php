@@ -21,7 +21,7 @@
 <nav class="navbar navbar-default navbar-ststic-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">Baju Danus</a>
+      <a class="navbar-brand" href="/admin">Baju Danus</a>
     </div>
     <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
@@ -33,11 +33,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ route('login') }}">Login user</a></li>
+                            <li><a href="{{ route('register') }}">Register user</a></li>
                         @else
                         <a class="navbar-brand nav navbar-nav" href="{{route('post.index')}}">Kategori</a>
-                        <a class="navbar-brand nav navbar-nav" href="/pengguna">User</a>
+                        <a class="navbar-brand nav navbar-nav" href="/users">User</a>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

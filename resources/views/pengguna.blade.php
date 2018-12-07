@@ -6,11 +6,11 @@
                 <div class="card-header">Dashboard Admin</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    @if(Session::has('alert-success'))
+                <div class="alert alert-success">
+                    <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
+                </div>
+            @endif
                     <h1 class=text-center> Tabel User </h1>
                     <div class="row">
                     	<div class="table table-responsive">

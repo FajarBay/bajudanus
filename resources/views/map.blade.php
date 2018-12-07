@@ -40,15 +40,10 @@
               <p>Home</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/user">
-              <i class="material-icons">person</i>
-              <p>User Profile</p>
-            </a>
           <li class="nav-item active ">
             <a class="nav-link" href="/map">
-              <i class="material-icons">location_ons</i>
-              <p>Maps</p>
+              <i class="material-icons">shopping_cart</i>
+              <p>Barang</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -57,6 +52,18 @@
               <p>Tabel Harga</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+              <i class="material-icons">logout</i>
+               <p>Logout</p>
+               </a>
+
+               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                 {{ csrf_field() }}
+                 </form>
+            </li>
           <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.html">
                     <i class="material-icons">unarchive</i>
@@ -71,7 +78,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Map</a>
+            <a class="navbar-brand" href="#pablo">Barang</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -127,16 +134,81 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div id="map"></div>
+
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+  <div class="col-md-12">
+    <h1>Data Sampah</h1>
+  </div>
+</div>
+      <div class="row">
+  <div class="table table-responsive">
+    <table class="table table-bordered" id="table">
+      <tr>
+        <th width="150px">No</th>
+        <th>Foto</th>
+        <th>Nama</th>
+        <th>Harga</th>
+      </tr>
+      {{ csrf_field() }}
+      <?php  $no = 1; ?>
+      @foreach ($data as $value)
+        <tr class="post{{$value->id}}">
+          <td>{{ $no++ }}</td>
+          <td><img src="{{ url('uploads/file/'.$value->jual) }}" style="width: 150px; height: 150px;"></td>
+          <td>{{ $value->nama }}</td>
+          <td>{{ $value->harga }}</td>
+        </tr>
+      @endforeach
+    </table>
+  </div>
+</div>
     </div>
   </div>
+
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="/welcome">
+                  Creative Tim
+                </a>
+              </li>
+              <li>
+                <a href="https://creative-tim.com/presentation">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/license">
+                  Licenses
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  
   <!-- Chartist JS -->
   <script src="../assets/js/plugins/chartist.min.js"></script>
   <!--  Notifications Plugin    -->
@@ -145,12 +217,7 @@
   <script src="../assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/js/demos.js
-      demo.initGoogleMaps();
-    });
-  </script>
+  
 </body>
 
 </html>

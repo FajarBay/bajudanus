@@ -41,15 +41,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/user">
-              <i class="material-icons">person</i>
-              <p>User Profile</p>
-            </a>
-          </li>
-          <li class="nav-item ">
             <a class="nav-link" href="/map">
-              <i class="material-icons">location_ons</i>
-              <p>Maps</p>
+              <i class="material-icons">shopping_cart</i>
+              <p>Barang</p>
             </a>
           </li>
           <li class="nav-item active">
@@ -58,6 +52,18 @@
               <p>Tabel Harga</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+              <i class="material-icons">logout</i>
+               <p>Logout</p>
+               </a>
+
+               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                 {{ csrf_field() }}
+                 </form>
+            </li>
           <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.html">
                     <i class="material-icons">unarchive</i>
@@ -159,124 +165,7 @@
   </div>
   {{$post->links()}}
 </div>
-{{-- Modal Form Create Post --}}
-<div id="create" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"></h4>
-      </div>
-      <div class="modal-body">
-        <form class="form-horizontal" role="form">
-          <div class="form-group row add">
-            <label class="control-label col-sm-2" for="title">Jenis :</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="title" name="title"
-              placeholder="Your Title Here" required>
-              <p class="error text-center alert alert-danger hidden"></p>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="body">Harga :</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="body" name="body"
-              placeholder="Your Body Here" required>
-              <p class="error text-center alert alert-danger hidden"></p>
-            </div>
-          </div>
-        </form>
-      </div>
-          <div class="modal-footer">
-            <button class="btn btn-warning" type="submit" id="add">
-              <span class="glyphicon glyphicon-plus"></span>Save Post
-            </button>
-            <button class="btn btn-warning" type="button"   data-dismiss="modal">
-              <span class="glyphicon glyphicon-remobe"></span>Close
-            </button>
-          </div>
-    </div>
-  </div>
-</div></div>
-{{-- Modal Form Show POST --}}
-<div id="show" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"></h4>
-                  </div>
-                    <div class="modal-body">
-                    <div class="form-group">
-                      <label for="">ID :</label>
-                      <b id="i"/>
-                    </div>
-                    <div class="form-group">
-                      <label for="">Jenis :</label>
-                      <b id="ti"/>
-                    </div>
-                    <div class="form-group">
-                      <label for="">Harga :</label>
-                      <b id="by"/>
-                    </div>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
 
-{{-- Modal Form Edit and Delete Post --}}
-<div id="myModal"class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"></h4>
-      </div>
-      <div class="modal-body">
-        <form class="form-horizontal" role="modal">
-
-          <div class="form-group">
-            <label class="control-label col-sm-2"for="id">ID</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="fid" disabled>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="control-label col-sm-2"for="title">Title</label>
-            <div class="col-sm-10">
-            <input type="name" class="form-control" id="t">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="control-label col-sm-2"for="body">Body</label>
-            <div class="col-sm-10">
-            <textarea type="name" class="form-control" id="b"></textarea>
-            </div>
-          </div>
-        </form>
-                {{-- Form Delete Post --}}
-        <div class="deleteContent">
-          Are You sure want to delete <span class="title"></span>?
-          <span class="hidden id"></span>
-        </div>
-
-      </div>
-      <div class="modal-footer">
-
-        <button type="button" class="btn actionBtn" data-dismiss="modal">
-          <span id="footer_action_button" class="glyphicon"></span>
-        </button>
-
-        <button type="button" class="btn btn-warning" data-dismiss="modal">
-          <span class="glyphicon glyphicon"></span>close
-        </button>
-
-      </div>
-    </div>
-  </div>
-</div>
  </br>
           </br>
           </br>

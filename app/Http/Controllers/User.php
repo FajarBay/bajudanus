@@ -48,8 +48,7 @@ class User extends Controller
      */
     public function show($id)
     {
-        $post = Post::find($id);
-        return view('view', array('post' => $post));
+        
     }
 
     /**
@@ -84,8 +83,7 @@ class User extends Controller
     public function destroy($id)
     {
 
-        $data = DB::where('id',$id)->first();
-        $data->delete();
+        DB::table('users')->where('id',$id)->delete();
         return redirect()->route('users.index')->with('alert-success', 'Data Berhasil Dihapus!');
     }
 }

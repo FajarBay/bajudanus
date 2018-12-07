@@ -19,6 +19,12 @@ class JualController extends Controller
         return view('jual', compact('data'));
     }
 
+    public function barang(){
+    $data = Jual::paginate(4);
+    return view('map',compact('data'));
+    
+    }
+
     /**
      * Show the form for creating a new resource.
      *

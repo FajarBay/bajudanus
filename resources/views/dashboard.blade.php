@@ -41,15 +41,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/user">
-              <i class="material-icons">person</i>
-              <p>User Profile</p>
-            </a>
-          </li>
-          <li class="nav-item ">
             <a class="nav-link" href="/map">
-              <i class="material-icons">location_ons</i>
-              <p>Maps</p>
+              <i class="material-icons">shopping_cart</i>
+              <p>Barang</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -58,6 +52,18 @@
               <p>Tabel Harga</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+              <i class="material-icons">logout</i>
+               <p>Logout</p>
+               </a>
+
+               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                 {{ csrf_field() }}
+                 </form>
+            </li>
           <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.html">
                     <i class="material-icons">unarchive</i>

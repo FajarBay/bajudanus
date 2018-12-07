@@ -46,13 +46,13 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/dashboard" ">Home</a></li>
+            <li><a href="#home" class="smoothscroll">Home</a></li>
             <li> <a href="#about" class="smoothscroll"> About</a></li>
             <li> <a href="#team" class="smoothscroll"> Team</a></li>
             <li> <a href="#contact" class="smoothscroll"> Contact</a></li>
             @if (Route::has('login'))
                     @auth
-                        <li><a href="{{ url('/home') }}" >Dashboard</a></li>
+                        <li><a href="{{ url('/dashboard') }}" >Dashboard</a></li>
                     @else
                         <li><a href="{{ route('login') }}" >Login</a></li>
 
