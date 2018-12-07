@@ -90,7 +90,9 @@
       <hr>
 
       <div class="col-lg-offset-2 col-lg-8">
-        <p style="text-align: center">Aplikasi Baju Danus memiliki fitur-fitur yang digunakan untuk mengakses sistem pada aplikasi bank sampah yaitu category, point, sell dan community. Selain itu, aplikasi ini juga menyediakan sarana untuk masyarakat yang ingin menjual hasil karya dari olahan sampah. </p>
+        <p style="text-align: center">Baju Danus has features that are used to access the system in a garbage bank application, namely category, point, sell and community. In addition, this application also provides facilities for people who want to sell their work from processed garbage. </p>
+      </br>
+    </br>
       </div>
       <!-- col-lg-6 -->
       <!-- col-lg-6 -->
@@ -100,49 +102,13 @@
   <!-- container -->
 
   <!-- ==== SECTION DIVIDER1 -->
-  <section class="section-divider textdivider divider1">
-    <div class="container">
-      <h1>DESIGN EXPAND BOUNDARIES</h1>
-      <hr>
-      <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
-    </div>
-    <!-- container -->
-  </section>
-  <!-- section -->
-
-
-  <!-- ==== SERVICES ==== -->
-  <div class="container" id="services" name="services">
-    <br>
-    <br>
-    <div class="row">
-      <h2 class="centered">ONE BRAND, ONE VOICE.</h2>
-      <hr>
-      <br>
-      <div class="col-lg-offset-2 col-lg-8">
-        <p style="text-align: center;">Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t
-          credible aren’t viable.
-        </p>
-        <p style="text-align: center;">We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
-        <p style="text-align: center;">By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s
-          when the brand can truly flex its muscles.</p>
-      </div>
-      <!-- col-lg -->
-    </div>
-    <!-- row -->
-
-    
-    <!-- row -->
-  </div>
-  <!-- container -->
-
-
+  
   <!-- ==== SECTION DIVIDER2 -->
-  <section class="section-divider textdivider divider2">
+  <section class="section-divider textdivider divider3">
     <div class="container">
-      <h1>DESIGN IS AN INTERACTION</h1>
+      <h1>SERVE THE COMMUNITY</h1>
       <hr>
-      <p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
+      <p>This application is made with the goal of keeping the public aware of the benefits of garbage, so that they can make the best possible.</p>
     </div>
     <!-- container -->
   </section>
@@ -157,46 +123,46 @@
       <br>
       <br>
       <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team01.jpg" height="120px" width="120px" alt="">
+        <img class="img img-circle" src="img/team/team05.jpg" height="120px" width="120px" alt="">
         <br>
         <h4><b>Fajar Bayu</b></h4>
         <a href="#" class="icon icon-twitter"></a>
         <a href="#" class="icon icon-facebook"></a>
         <a href="#" class="icon icon-flickr"></a>
-        <p>Fajar combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+        <p style="text-align: left">Fajar combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
       </div>
       <!-- col-lg-3 -->
 
       <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team02.jpg" height="120px" width="120px" alt="">
+        <img class="img img-circle" src="img/team/team08.jpg" height="120px" width="120px" alt="">
         <br>
         <h4><b>Septiya Kristin</b></h4>
         <a href="#" class="icon icon-twitter"></a>
         <a href="#" class="icon icon-facebook"></a>
         <a href="#" class="icon icon-flickr"></a>
-        <p>Septiya is an experienced marcoms practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+        <p style="text-align: left">Septiya is an experienced marcoms practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
       </div>
       <!-- col-lg-3 -->
 
       <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team03.jpg" height="120px" width="120px" alt="">
+        <img class="img img-circle" src="img/team/team06.jpeg" height="120px" width="120px" alt="">
         <br>
-        <h4><b>Azzahra Paramita</b></h4>
+        <h4><b>Azzahra Pramata</b></h4>
         <a href="#" class="icon icon-twitter"></a>
         <a href="#" class="icon icon-facebook"></a>
         <a href="#" class="icon icon-flickr"></a>
-        <p>Be a creative director is a hard task, but Rara loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
+        <p style="text-align: left">Be a creative director is a hard task, but Rara loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
       </div>
       <!-- col-lg-3 -->
 
       <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team04.jpg" height="120px" width="120px" alt="">
+        <img class="img img-circle" src="img/team/team07.jpeg" height="120px" width="120px" alt="">
         <br>
         <h4><b>Zulvia Eggy</b></h4>
         <a href="#" class="icon icon-twitter"></a>
         <a href="#" class="icon icon-facebook"></a>
         <a href="#" class="icon icon-flickr"></a>
-        <p>Eggy began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
+        <p style="text-align: left">Eggy began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
       </div>
       <!-- col-lg-3 -->
 
@@ -238,9 +204,9 @@
     <div class="container">
       <h1>CRAFTED IN YOGYAKARTA, INA.</h1>
       <hr>
-      <p>Some Address Jalan Mangga No.29C, Karanggayam</p>
+      <p>Jalan Mangga No.29C, Karanggayam</p>
       <p>+62 838 9771 0862</p>
-      <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
+      
     </div>
     <!-- container -->
   </section>
@@ -256,19 +222,18 @@
 
       <div class="col-lg-4">
         <h3>About Us</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>We are students of the Computer Science Vocational School of Gadjah Mada University 2017.</p>
         
       </div>
       <!-- col -->
 
       <div class="col-lg-3">
         <h3>Contact Information</h3>
-        <p><span class="icon icon-home"></span> Some Address 987, NY<br/>
-          <span class="icon icon-phone"></span> +34 9884 4893 <br/>
-          <span class="icon icon-mobile"></span> +34 59855 9853 <br/>
-          <span class="icon icon-envelop"></span> <a href="#"> example@example.com</a> <br/>
-          <span class="icon icon-twitter"></span> <a href="#"> @TemplateMag </a> <br/>
-          <span class="icon icon-facebook"></span> <a href="#"> TemplateMag </a> <br/>
+        <p><span class="icon icon-home"></span> Jalan Mangga No.29C, Karanggayam, Yogyakarta<br/>
+          <span class="icon icon-mobile"></span> +62 838 9771 0862 <br/>
+          <span class="icon icon-envelop"></span> <a href="#"> bajudanus@gmail.com</a> <br/>
+          <span class="icon icon-twitter"></span> <a href="#"> @bajudanus </a> <br/>
+          <span class="icon icon-facebook"></span> <a href="#"> BajuDanus </a> <br/>
         </p>
       </div>
       <!-- col -->

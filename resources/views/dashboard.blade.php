@@ -149,7 +149,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">add_box</i>
-                    <a href="/kategori">Show More...</a>
+                    <a href="/tabel">Show More...</a>
                   </div>
                 </div>
               </div>
@@ -206,57 +206,48 @@
               </div>
             </div>
           </div>
+
+
+        <div class="content">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-success">
-                  <div class="ct-chart" id="dailySalesChart"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Daily Sales</h4>
-                  <p class="card-category">
-                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-6 col-sm-6">
+          <div class="card-header">
+            <h3><strong>Manfaat Sampah Anorganik</strong></h3></br>
+           <img class="img" src="img/unsplash1.jpg" height="320px" width="450px" style="margin-bottom: 20px">
+            <p style="text-align: justify; text-indent :2em;">
+              Sampah anorganik adalah salah satu jenis limbah yang berasal dari bahan-bahan anorganik dimana proses dan pembuatannya menggunakan suatu teknologi.
+              </p>
+            <p style="text-align: justify; text-indent :2em;">
+              Sebagai limbah anorganik, tentunya limbah tersebut tidak bisa diuraikan secara alami dalam tanah, kalaupun dapat terurai butuh waktu yang sangat lama. Ketika sampah-samlah tersebut di dalam tanah maka tidak mampu menyatu ke dalam tanah dalam waktu bertahun-tahun.
+            </p>
+            <div class="card-footer"></div>
+          </div>
+          </div>
+
+            <div class="col-md-6 col-sm-6">
+            <div class="card-header">
+              <p style="text-align: justify"><strong>1. Kerajinan tangan</strong></p>
+                <p style="text-align: justify; text-indent :2em;">  
+                Banyak warga di Indonesia yang memiliki ide kreatif untuk mendapatkan manfaat tersembunyi dari sampah anorganik. Salah satunya dengan membuat berbagai kerajinan tangan atau handycraft.
+                </p>
+                <p style="text-align: justify; text-indent :2em;">
+                Jenis-jenis kerajinan tangan tersebut berasal dari sampah-sampah yang tidak bisa diuraikan ke dalam tanah. Menjadi sebuah barang kerajinan tangan, sampah-sampah tersebut memiliki nilai ekonomis yang tinggi sehingga mampu mengembangkan sebuah bisnis yang besar.
+                </p>
+              <p style="text-align: justify"><strong>2. Pembuatan bahan daur ulang</strong></p>
+                <p style="text-align: justify; text-indent :2em;">
+                Pemanfaatan sampah anorganik untuk bahan daur ulang biasanya dari sampah-sampah yang berasal dari plastik. Sampah-sampah plastik tersebut kemudian dikumpulkan dan didaur ulang. Melakukan daur ulang sampah plastik ini tentu akan sedikit banyak mengurangi penumpukan sampah yang tidak bisa terurai di dalam tanah. Dengan melakukan daur ulang terhadap sampah-sampah tersebut, maka akan menjadikan hal yang positif terhadap lingkungan sekitar anda.
+              </p>
+              <p style="text-align: justify"><strong>3. Penggunaan kembali atau reusable</strong></p>
+                <p style="text-align: justify; text-indent :2em;">
+                Istilah reusable ini merupakan sebuah tindakan untuk menggunakan berbagai sampah yang bersifat anorganik. Sampah-sampah tersebut ketika sudah tidak dipakai lagi, maka tidak perlu dibuang sehingga tidak menjadi limbah yang mengotori lingkungan sekitar.
+              </p>
+                <div class="card-footer"></div>
             </div>
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-warning">
-                  <div class="ct-chart" id="websiteViewsChart"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Email Subscriptions</h4>
-                  <p class="card-category">Last Campaign Performance</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> campaign sent 2 days ago
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-danger">
-                  <div class="ct-chart" id="completedTasksChart"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Completed Tasks</h4>
-                  <p class="card-category">Last Campaign Performance</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> campaign sent 2 days ago
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
+        </div>
+      </div>
 
       <footer class="footer">
         <div class="container-fluid">
