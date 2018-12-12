@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app_user')
 
 @section('content')
     <div class="container">
@@ -20,6 +20,14 @@
                                     <div class="form-group">
                                         <label for="harga">Harga</label>
                                         <input type="text" class="form-control" id="harga" name="harga" placeholder="Harga" value="{{ $jual->harga }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alamat">Alamat</label>
+                                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat" value="{{ $jual->alamat }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="keterangan">Keterangan</label>
+                                        <textarea class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan" value="{{ $jual->keterangan }}"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="foto">Foto</label><br>

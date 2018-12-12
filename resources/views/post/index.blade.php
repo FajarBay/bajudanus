@@ -1,14 +1,15 @@
-
-
-@extends('layouts.app')
+@extends('layouts.app_2')
 @section('content')
-<div class="row">
-  <div class="col-md-12">
-    <h1>Data Sampah</h1>
-  </div>
-</div>
+<div class="card-header">Dashboard Admin</div>
 
-<div class="row">
+  <div class="card-body">
+    @if (session('status'))
+      <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+      </div>
+     @endif
+       <h1 class=text-center> Data Sampah </h1>
+       <div class="row">
   <div class="table table-responsive">
     <table class="table table-bordered" id="table">
       <tr>

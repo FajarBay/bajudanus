@@ -20,7 +20,7 @@ class JualController extends Controller
     }
 
     public function barang(){
-    $data = Jual::paginate(4);
+    $data = Jual::paginate(5);
     return view('map',compact('data'));
     
     }
@@ -47,6 +47,8 @@ class JualController extends Controller
         $data->nama = $request->input('nama');
         $jual = $request->file('jual');
         $data->harga = $request->input('harga');
+        $data->alamat = $request->input('alamat');
+        $data->keterangan = $request->input('keterangan');
         $ext = $jual->getClientOriginalExtension();
         $newName = $data->nama.time().".".$ext;
         $jual->move('uploads/file',$newName);
@@ -98,6 +100,8 @@ class JualController extends Controller
         } 
         $jual->nama = $request->nama;
         $jual->harga = $request->harga;
+        $jual->alamat = $request->alamat;
+        $jual->keterangan = $request->keterangan;
         $jual->save();
         $data = \App\Jual::all();
         return redirect()->route('jual.index')->with('alert-success','Berhasil Mengubah Data!');

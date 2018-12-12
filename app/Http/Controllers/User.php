@@ -48,7 +48,8 @@ class User extends Controller
      */
     public function show($id)
     {
-        
+        $user = \App\User::find($id);
+        return view('users.show', ['user'=>$user]);
     }
 
     /**

@@ -146,19 +146,25 @@
   <div class="table table-responsive">
     <table class="table table-bordered" id="table">
       <tr>
-        <th width="150px">No</th>
+        <th>No</th>
         <th>Foto</th>
         <th>Nama</th>
         <th>Harga</th>
+        <th>Alamat</th>
+        <th class="text-center">Detail</th>
       </tr>
       {{ csrf_field() }}
       <?php  $no = 1; ?>
       @foreach ($data as $value)
         <tr class="post{{$value->id}}">
           <td>{{ $no++ }}</td>
-          <td><img src="{{ url('uploads/file/'.$value->jual) }}" style="width: 150px; height: 150px;"></td>
+          <td class="text-center"><img src="{{ url('uploads/file/'.$value->jual) }}" style="width: 170px; height: 150px;"></td>
           <td>{{ $value->nama }}</td>
           <td>{{ $value->harga }}</td>
+          <td width="300">{{ $value->alamat }}</td>
+          <td class="text-center">
+          <a href="{{ route('jual.show',$value->id) }}" class=" btn btn-sm btn-primary">Show</a>
+        </td>
         </tr>
       @endforeach
     </table>

@@ -18,6 +18,8 @@ class CreateJualsTable extends Migration
             $table->string("nama");
             $table->string("jual");
             $table->string("harga");
+            $table->string('alamat');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

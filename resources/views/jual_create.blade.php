@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app_user')
 @section('content')
     <!-- Main Section -->
     <section class="main-section">
@@ -15,8 +15,16 @@
                     <input type="text" class="form-control" id="nama" name="nama">
                 </div>
                 <div class="form-group">
-                    <label for="email">Harga:</label>
+                    <label for="harga">Harga:</label>
                     <input type="text" class="form-control" id="harga" name="harga">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" class="form-control" id="alamat" name="alamat">
+                </div>
+                <div class="form-group">
+                    <label for="keterangan">Keterangan:</label>
+                    <textarea class="form-control" id="keterangan" name="keterangan"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="email">File:</label>

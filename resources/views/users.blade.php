@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app_2')
 
 @section('content')
 <section class="main-section">
@@ -21,6 +21,7 @@
                                     <th class="col-1">No</th>
                                     <th class="col-3">Nama</th>
                                     <th class="col-3">Email</th>
+                                    <th class="col-3">Alamat</th>
                                     <th class="col-3 text-center">Aksi</th>
                                 </tr>
                             </thead>
@@ -31,6 +32,7 @@
                                         <td class="col-1">{{ $no++ }}</td>
                                         <td class="col-3">{{ $d->name }}</td>
                                         <td class="col-3">{{ $d->email }}</td>
+                                        <td class="col-3">{{ $d->address }}</td>
                                         <td class="col-3 text-center">                    
                                             <form action="{{Route('users.destroy',$d->id)}}" method="post">
                                                 {{ csrf_field() }}
