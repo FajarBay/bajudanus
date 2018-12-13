@@ -128,93 +128,50 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-warning card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-book"></i>
+
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div class="card">
+                      <div class="card-body">
+
+                          <h1 class="text-center" style="padding-top: 20px;">Edit data jual</h1>
+                          <div class="row">
+                              <div class="col-lg-8" style="float: none; margin: 0 auto;">
+                                  <form action="{{route('jual.update', $jual->id)}}" style=" padding-bottom: 20px;" method="post" enctype="multipart/form-data">
+                                  <input type="hidden" name="_method" value="PUT">
+                                      {{ csrf_field() }}
+                                      <div class="form-group">
+                                          <label for="nama">Nama</label>
+                                          <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" value="{{ $jual->nama }}">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="harga">Harga</label>
+                                          <input type="text" class="form-control" id="harga" name="harga" placeholder="Harga" value="{{ $jual->harga }}">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="alamat">Alamat</label>
+                                          <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat" value="{{ $jual->alamat }}">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="keterangan">Keterangan</label>
+                                          <textarea class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan" value="{{ $jual->keterangan }}"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="foto">Foto</label><br>
+                                          <img src="{{ url('uploads/file/'.$jual->jual) }}" style="width: 150px; height: 150px;"><br>
+                                          <input type="file" class="form-control" id="foto" name="foto" placeholder="foto">
+                                      </div>
+                                      <button type="submit" class="btn btn-md btn-primary" style="margin:auto; text-align:center; display:block;">GANTI</button>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <p class="card-category">Kertas
-                  <h4 class="card-title">Rp 1000/kg</h4>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">add_box</i>
-                    <a href="/kategori">Show More...</a>
-                  </div>
-                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-success card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-glass"></i>
-                  </div>
-                  <p class="card-category">Kaca</p>
-                  <h4 class="card-title">Rp 10.000/kg</h4>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">add_box</i> 
-                    <a href="#pablo">Show More...</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-danger card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-shopping-bag"></i>
-                  </div>
-                  <p class="card-category">Plastik</p>
-                  <h4 class="card-title">Rp 5000/kg</h4>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">add_box</i> 
-                    <a href="#pablo">Show More...</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br/>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-info card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">layers</i>
-                  </div>
-                  <p class="card-category">Kardus</p>
-                  <h4 class="card-title">Rp 10.000/kg</h4>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">add_box</i> 
-                    <a href="#pablo">Show More...</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
+      </div>
+
       <footer class="footer">
             &copy;
             <script>

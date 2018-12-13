@@ -1,16 +1,16 @@
-@extends('layouts.app_user')
+@extends('layouts.app_2')
 
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                       
+
                         <h1 class="text-center" style="padding-top: 20px;">Edit data jual</h1>
                         <div class="row">
                             <div class="col-lg-8" style="float: none; margin: 0 auto;">
-                                <form action="{{route('jual.update', $jual->id)}}" style=" padding-bottom: 20px;" method="post" enctype="multipart/form-data">   
+                                <form action="{{route('jual.update', $jual->id)}}" style=" padding-bottom: 20px;" method="post" enctype="multipart/form-data">
                                 <input type="hidden" name="_method" value="PUT">
                                     {{ csrf_field() }}
                                     <div class="form-group">
@@ -36,7 +36,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-md btn-primary" style="margin:auto; text-align:center; display:block;">GANTI</button>
                                 </form>
-                            </div>                              
+                            </div>
                         </div>
                     </div>
                 </div>

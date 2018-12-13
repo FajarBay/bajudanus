@@ -21,7 +21,7 @@
 <nav class="navbar navbar-default navbar-ststic-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/admin">Baju Danus</a>
+      <a class="navbar-brand" href="/">Baju Danus</a>
     </div>
     <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
@@ -32,10 +32,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
-                        
-                            <a class="navbar-brand nav navbar-nav" href="{{route('post.index')}}">Kategori</a>
-                            <a class="navbar-brand nav navbar-nav" href="/users">User</a>
-                        
+
                     </ul>
                 </div>
   </div>

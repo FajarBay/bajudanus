@@ -53,14 +53,14 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{ route('logout') }}"
+            <a class="nav-link" href="{{ route('user.logout') }}"
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               <i class="material-icons">logout</i>
                <p>Logout</p>
                </a>
 
-               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+               <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
                  {{ csrf_field() }}
                  </form>
             </li>
@@ -137,7 +137,7 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="card card-stats">
                 <div class="card-header card-header-warning card-header-icon">
                   <div class="card-icon">
@@ -154,24 +154,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-success card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">favorite</i>
-                  </div>
-                  <p class="card-category">Points</p>
-                  <h4 class="card-title">500</h4>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">date_range</i> 
-                    <a href="#pablo">Details</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="card card-stats">
                 <div class="card-header card-header-danger card-header-icon">
                   <div class="card-icon">
@@ -182,13 +166,13 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <i class="material-icons">shopping_cart</i> 
+                    <i class="material-icons">shopping_cart</i>
                     <a href="/jual">Sell Your Garbage</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="card card-stats">
                 <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
@@ -199,8 +183,8 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <i class="material-icons">how_to_reg</i> 
-                    <a href="#pablo">Join The Commubity</a>
+                    <i class="material-icons">how_to_reg</i>
+                    <a href="/community_show">Join The Community</a>
                   </div>
                 </div>
               </div>
@@ -228,7 +212,7 @@
             <div class="col-md-6 col-sm-6">
             <div class="card-header">
               <p style="text-align: justify"><strong>1. Kerajinan tangan</strong></p>
-                <p style="text-align: justify; text-indent :2em;">  
+                <p style="text-align: justify; text-indent :2em;">
                 Banyak warga di Indonesia yang memiliki ide kreatif untuk mendapatkan manfaat tersembunyi dari sampah anorganik. Salah satunya dengan membuat berbagai kerajinan tangan atau handycraft.
                 </p>
                 <p style="text-align: justify; text-indent :2em;">

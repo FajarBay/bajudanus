@@ -16,7 +16,7 @@ class User extends Controller
     public function index()
     {
        $users = DB::table('users')->get();
-       return view ('users', ['users' => $users]);
+       return view ('pengguna', ['users' => $users]);
     }
 
     /**
@@ -48,8 +48,6 @@ class User extends Controller
      */
     public function show($id)
     {
-        $user = \App\User::find($id);
-        return view('users.show', ['user'=>$user]);
     }
 
     /**
@@ -85,6 +83,6 @@ class User extends Controller
     {
 
         DB::table('users')->where('id',$id)->delete();
-        return redirect()->route('users.index')->with('alert-success', 'Data Berhasil Dihapus!');
+        return redirect()->route('pengguna.index')->with('alert-success', 'Data Berhasil Dihapus!');
     }
 }

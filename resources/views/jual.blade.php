@@ -1,4 +1,4 @@
-@extends('layouts.app_user')
+@extends('layouts.app_2')
 @section('content')
  <!-- Main Section -->
     <section class="main-section">
@@ -39,7 +39,7 @@
                         </td>
                         <td>{{ $datas->harga }}</td>
                         <td>{{ $datas->alamat }}</td>
-                        
+
                         <td class="text-center">
                             <form action="{{ route('jual.destroy', $datas->id) }}" method="post">
                                 {{ csrf_field() }}

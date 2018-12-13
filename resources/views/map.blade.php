@@ -53,14 +53,14 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{ route('logout') }}"
+            <a class="nav-link" href="{{ route('user.logout') }}"
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               <i class="material-icons">logout</i>
                <p>Logout</p>
                </a>
 
-               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+               <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
                  {{ csrf_field() }}
                  </form>
             </li>
@@ -139,7 +139,7 @@
         <div class="container-fluid">
           <div class="row">
   <div class="col-md-12">
-    <h1>Data Sampah</h1>
+    <h2>Barang Dijual</h2>
   </div>
 </div>
       <div class="row">
@@ -214,7 +214,7 @@
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  
+
   <!-- Chartist JS -->
   <script src="../assets/js/plugins/chartist.min.js"></script>
   <!--  Notifications Plugin    -->
@@ -223,7 +223,7 @@
   <script src="../assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
-  
+
 </body>
 
 </html>

@@ -53,14 +53,14 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{ route('logout') }}"
+            <a class="nav-link" href="{{ route('user.logout') }}"
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               <i class="material-icons">logout</i>
                <p>Logout</p>
                </a>
 
-               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+               <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
                  {{ csrf_field() }}
                  </form>
             </li>
@@ -138,7 +138,7 @@
         <div class="container-fluid">
           <div class="row">
   <div class="col-md-12">
-    <h1>Data Sampah</h1>
+    <h2>Data Sampah</h2>
   </div>
 </div>
 
@@ -236,4 +236,3 @@
 </body>
 
 </html>
-
